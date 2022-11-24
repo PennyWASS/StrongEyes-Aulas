@@ -1,0 +1,22 @@
+.form-control:focus{
+    box-shadow: none;
+    border-color: #BA68C8;
+}
+.profile-button{
+    background: #BA68C8;
+    box-shadow: none;
+    border: none;
+}
+.profile-button:hover{
+    background-color: #682773;
+}
+.profile-button:active{
+    background: #682773;
+    box-shadow: none;
+}
+.labels{
+    font-size: 11px;
+}
+/* Focus: usado pra quando eu quero mudar alguma característica quando o ítem está em foco 
+hover: quando eu passo o mouse em cima do elemento 
+active:quando ele for clicado */

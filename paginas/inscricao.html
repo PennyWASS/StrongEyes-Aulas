@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="../imagens/panic.jpg" type="image/x-icon">
+    <title>StrongEyes - Inscrição</title>
+    <link rel="stylesheet" href="../estilo/inscricao.css">
+    <script src="../js/login.js"></script>
+</head>
+<body>
+    <h1>Strong Eyes - Site para Recomendações</h1>
+
+    <div id="login">
+        <h3 class="text-center pt-5" id="cadastrotxt">Crie sua conta aqui:</h3>
+        
+        <div class="container">
+            <div id="login-row" class="justify-content-center align items center row">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form">
+                            <h3 class="text-center">Cadastro</h3>
+                            <div class="form-group">
+                                <label for="username" class="text-black">Qual o seu e-mail?</label>
+                                <input type="text" id="email" name="email" class="form-control" placeholder="Digite seu e-mail..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-black">Crie uma senha:</label>
+                                <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite sua senha..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-black">repita sua senha:</label>
+                                <input type="password" id="repet-senha" name="senha" class="form-control" placeholder="repita sua senha..." required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="username" class="text-black">Qual o seu nome?</label>
+                                <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome..." required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="username" class="text-black">De onde você é?</label>
+                                <input type="text" id="nome" name="nome" class="form-control" placeholder="Selecione sua nacionalidade..." required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="username" class="text-black">Qual sua idade?</label>
+                                <input type="number" id="dia" name="dia" class="form-control" placeholder="Dia">
+                                <input type="number" id="mes" name="mes" class="form-control" placeholder="Mês">
+                                <input type="number" id="ano" name="ano" class="form-control" placeholder="Ano">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="username" class="text-black">Qual é o seu gênero?</label>
+                                    <div >
+                                        <label for="remember-me" class="text-black">
+                                            <span>
+                                                <input type="radio" name="nasculino" id="feminino">
+                                            </span>
+                                            <span>Masculino</span>
+                                            <span>
+                                                <input type="radio" name="feminino" id="feminino">
+                                            </span>
+                                            <span>Feminino</span>
+                                            <span>
+                                                <input type="radio" name="nbinario" id="nbinario">
+                                            </span>
+                                            <span>Não binário</span>
+                                            <span>
+                                                <input type="radio" name="outro" id="outro">
+                                            </span>
+                                            <span>Outro</span>
+                                            <span>
+                                                <input type="radio" name="pnd" id="pnd">
+                                            </span>
+                                            <span>Prefiro não dizer</span>
+                                        </label>
+                                    </div>
+                                </label>
+                            </div>
+
+                            
+                            <div class="form-group mt-2">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <label for="remember-me" class="text-black mb-2">
+                                            <span>
+                                                <input type="checkbox" name="remember-me" id="remember-me">
+                                            </span>
+                                            <span>Quero receber notificações no meu e-mail</span>
+                                        </label>
+                                        <label for="notificacao" class="text-black mb-2">
+                                            <span>
+                                                <input type="checkbox" name="notificiacao" id="notificacao">
+                                            </span>
+                                            <span>Eu concordo com os <a href="">Termos e Condições de Uso</a></span>
+                                        </label>
+                                        <label for="autorizacao" class="text-black mb-2">
+                                            <span>
+                                                <input type="checkbox" name="autorizacao" id="autorizacao">
+                                            </span>
+                                            <span>Eu autorizo o compartilhamento dos meus dados cadastrais com os os provedores de conteúdo do StrongEyes</span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="login.html">Já tenho uma conta</a>
+                                    </div>
+                                </div>
+                                <br>
+                                <input onclick="registro()"  type="submit" name="submit" class="btn btn-success btn-md mt-1" value="Cadastrar" id="envio">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
