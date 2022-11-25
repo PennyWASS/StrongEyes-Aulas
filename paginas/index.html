@@ -14,8 +14,8 @@
     <title>Strong Eyes</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a href="#" class="navbar-brand"><img src="../imagens/Strong-Eyes.ico" alt=""></img></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light barra">
+        <a href="#" class="navbar-brand"><img src="../imagens/Strong-Eyes.ico" alt="Logo StrongEyes" width="50"></img></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#textoNavbar" aria-controls="textoNavbar"
         aria-expanded="false" aria-label="Alternar Navegação">
@@ -30,54 +30,62 @@
                     <a href="perfil.html" class="nav-link">Perfil</a>
                 </li>
                 <li class="nav-item">
-                    <a href=".html" class="nav-link">Entrar</a>
+                    <a href="login.html" class="nav-link">Entrar</a>
                 </li>
                 <li class="nav-item">
-                    <a href="tarefas.html" class="nav-link">Cadastre-se</a>
+                    <a href="inscricao.html" class="nav-link">Cadastre-se</a>
                 </li>
             </ul>
-            <span class="navbar-text"><a href="desenvolvedores.html">Desenvolvedores</a></span>
+            <img src="../imagens/lupa.png" alt="" width="35" style="margin-right: 5px;">
+            <form role="search">
+                <input style="opacity: 1; text-align: center; width: 100px;" class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+            </form>
+            <span class="navbar-text"><a href="desenvolvedores.html"><img src="../imagens/dev.png" alt="desenvolvedores" width="45px"></a></span>
         </div>
     </nav>
-
-    <div class="row mt-4 ml-1 mr-1">
+    
+    <div class="py-3 text-center texto">
+        <h1 style="color: #65379B; font-family: Oswald;">Strong Eyes</h1>
+        <p style="font-family: Oswald;">Fique ligado em quais Animes ou Doramas assistir! <br> Gosta de Mangás?! <br> Descubra quais os mais lidos e encontre seus gostos aqui! <br> Venha avaliar as músicas de K-pop juntamente conosco!</p>
+    </div>
+    <div class="row mt-4 ml-1 mr-1 tudo" id="tudo">
         <div class="col-sm-4">
             <div class="card teste" >
-                <div class="card-header">
+                <div class="card-header cabecalho">
                     Animes
                 </div>
                 <div class="card-body" id="ch">
-                    <h5 class="card-title">Chainsaw Man</h5>
-                    <p data-toggle="modal" data-target="#ModalTarefas">Veja o anime mais recente: Chainsaw Man!</p>
-                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ModalTarefas">Confira</a>
+                    <h5 class="card-title titulo">Chainsaw Man</h5> <br>
+                    <p data-toggle="modal" data-target="#ModalTarefas" class="frase">Veja o anime mais recente: Chainsaw Man!</p>
+                    <a href="#" class="btn btn-primary botao" data-toggle="modal" data-target="#ModalTarefas">Confira</a>
                     <br>
                 </div>
             </div>
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 abc">
             <div class="card teste">
-                <div class="card-header">
+                <div class="card-header cabecalho">
                     K-pop
                 </div>
                 <div class="card-body" id="bts">
                     <h5 class="card-title">Bangtan Boys</h5>
                     <br>
-                    BTS: Yet to come, Run BTS, Butter, Dynamite...<br>
-                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ModalTarefas">Confira</a>
+                    <p data-toggle="modal" data-target="#ModalTarefas" class="frase">BTS: Yet to come, Run BTS, Butter, Dynamite...</p><br>
+                    <a href="#" class="btn btn-primary botao" data-toggle="modal" data-target="#ModalTarefas">Confira</a>
                 </div>
             </div>
         </div>
 
         <div class="col-sm-4">
             <div class="card teste">
-                <div class="card-header">
+                <div class="card-header cabecalho">
                     Dorama
                 </div>
                 <div class="card-body" id="r6">
-                    <h5 class="card-title">Round 6</h5>
-                    Os melhores doramas da Netflix! <br>
-                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ModalTarefas">Confira</a>
+                    <h5 class="card-title">Round 6</h5> <br>
+                    <p data-toggle="modal" data-target="#ModalTarefas" class="frase">Os melhores doramas da Netflix!</p> <br>
+                    <a href="#" class="btn btn-primary botao" data-toggle="modal" data-target="#ModalTarefas">Confira</a>
                 </div>
             </div>
         </div>

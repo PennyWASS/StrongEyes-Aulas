@@ -2,7 +2,6 @@
     background-image: url("../imagens/Chainsawman.jpg");
     background-size: cover;
 }
-
 #bts{
     background-image: url("../imagens/bts-equipe.webp");
     background-size: cover;
@@ -13,8 +12,30 @@
     background-size: cover;
     color: white;
 }
+.frase{
+    text-align: center;
+    font-family: Oswald;
+    font-size: 50px;
+}
 
+.cabecalho{
+    text-align: center;
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+    font-size: 25px;
+}
+.barra{
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+}
+body{
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+}
+.tudo{
+    border-radius: 500px;
+}
+.botao{
+    text-align: center;
+}
 .teste{
     height: 500px;
-    width: 500px;
+    width: 450px;
 }

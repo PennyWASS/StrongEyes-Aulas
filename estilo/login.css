@@ -1,16 +1,16 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: green;
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
 }
 
 #login .container #login-row #login-column #login-box #login-form{
     margin-top: 120px;
     max-width: 600px;
     height: 320px;
-    border: 1px solid #9C9C9C;
-    background-color: #EAEAEA;
+    /* border: 1px solid #9C9C9C;
+    background-color: #EAEAEA; */
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
     padding: 20px;
     margin-top: -1;
     border-radius: 20px;
@@ -19,4 +19,10 @@ body{
     display: block;
     margin: 0 auto;
     margin-top: 10px;
+    background-color: #7028e4;
+    /*color: black;*/
+    border:#7028e4;
+}
+.barra{
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
 }
