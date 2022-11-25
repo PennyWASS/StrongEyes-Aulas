@@ -1,17 +1,17 @@
 .form-control:focus{
     box-shadow: none;
-    border-color: #84fab0;
+    border-color: #65379B;
 }
 .profile-button{
-    background: #84fab0;
+    background: #65379B;
     box-shadow: none;
     border: none;
 }
 .profile-button:hover{
-    background-color: #8fd3f4;
+    background-color: #65379B;
 }
 .profile-button:active{
-    background: #8fd3f4;
+    background: #65379B;
     box-shadow: none;
 }
 .labels{
