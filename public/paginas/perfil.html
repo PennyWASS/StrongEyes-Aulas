@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../estilo/perfil.css">
+    <link rel="shortcut icon" href="../imagens/naruto-icon.png" type="image/x-icon">
+    <script src="../js/login.js"></script>
+    <title>StrongEyes - Perfil</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light barra">
+        <a href="#" class="navbar-brand"><img src="../imagens/Strong-Eyes.ico" alt="Logo StrongEyes" width="50"></img></a>
+        <button class="navbar-toggler" type="button" data-toggler="collapse"
+        data-target="#textoNavbar" aria-controls="textoNavbar"
+        aria-expanded="false" aria-label="Alternar Navegação">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="textoNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/tarefas" class="nav-link active">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/login" class="nav-link">Entrar</a>
+                </li>
+            </ul>
+            <span class="navbar-text"><a href="/login">Logout</a></span>
+        </div>
+    </nav>
+
+    <form action="/salvarPerfil" method="post">
+
+        <div class="container rounded bg-white mt-5 mb-5 barra">
+            <div class="row">
+                <div class="col-md-3 border-right">
+                    
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                    <img class="rounded-circle mt-5" width="150px" src="https://64.media.tumblr.com/68830a6f126fbe5a8c752860068df317/25fb2d15b5b7adc7-5c/s500x750/485d9fa2dbe6e2636978bef45afe8daf5ebdb7a3.jpg">
+                    <span class="font-weight-bold">Jimin</span>
+                    <span class="text-black-50">jiminDoBTS@gmail.com </span>
+                </div>
+                </div>
+                <div class="col-md-5 border-right">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-coutent-center align-items-center mb-3">
+                            <h4 class="text-right">Configurações do Perfil</h4>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <label class="labels">Nome</label>
+                                <input type="text" class="form-control" placeholder="primeiro nome" name="nome" value="">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="labels">Sobrenome</label>
+                                <input type="text" class="form-control" placeholder="segundo nome" name="sobrenome" value="">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <label>Numero de Telefone</label>
+                                <input type="text" class="form-control" placeholder="digite o telefone" name="telefone" value="">
+                            </div>
+                            <div class="col-md-12">
+                                <label>Bairro</label>
+                                <input type="text" class="form-control" placeholder="digite o bairro" name="bairro" value="">
+                            </div>
+                            <div class="col-md-12">
+                                <label>Rua</label>
+                                <input type="text" class="form-control" placeholder="digite a rua" name="rua" value="">
+                            </div>
+                            <div class="col-md-12">
+                                <label>CEP</label>
+                                <input type="text" class="form-control" placeholder="digite o CEP" name="cep" value="">
+                            </div>
+                            <div class="col-md-12">
+                                <label>Estado</label>
+                                <input type="text" class="form-control" placeholder="digite o estado" name="estado" value="">
+                            </div>
+                            <div class="col-md-12">
+                                <label>E-mail</label>
+                                <input type="email" class="form-control" placeholder="digite o email" name="email" value="">
+                            </div>
+                            <div class="col-md-12">
+                                <label>País</label>
+                                <input type="text" class="form-control" placeholder="digite o país" name="pais" value="">
+                            </div>
+                            <div class="mt-5 text-center">
+                                <button class="btn btn-primary profile-button">
+                                    Salvar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 py-5">
+                        <div class="d-flex justify-content-center align-itens-center">
+                            <h4 class="text-right ">Informações de Login</h4>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="labels">Login</label>
+                            <input type="text" class="form-control" value="">
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <label class="labels">Senha</label>
+                            <input type="password" class="form-control" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
