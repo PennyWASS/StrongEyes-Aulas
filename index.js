@@ -4,6 +4,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const database = require('./db');
 const Perfil = require('./modelos/perfil');
+const alert = require('alert');
 
 server.use(express.static(path.join(__dirname, 'public')));
 
@@ -43,9 +44,32 @@ server.post('/salvarPerfil', async(req, res)=>{
     res.sendFile(path.join(__dirname+'/public/paginas/index.html'))
 })
 
+server.post('/logar', async(req, res)=>{
+    const selecUsuario = await Perfil.findOne({
+        where:{
+            login: req.body.email,
+            senha: req.body.senha
+        }
+    });
+    if(selecUsuario !== null){
+        res.sendFile(path.join(__dirname+'/public/paginas/index.html'))
+    } else{
+        alert('Login ou senha incorretos'),
+        res.sendFile(path.join(__dirname+'/public/paginas/login.html'))
+    }
+    if(selecUsuario == null || selecUsuario == ''){
+        alert('Login vazio')
+        res.sendFile(path.join(__dirname+'/public/paginas/login.html'))
+    }
+})
+
+server.get('/listarUsuario', async(req, res)=>{
+    const usuarios = await Perfil.findAll();
+    console.log(usuarios);
+})
 
 server.get('/', (req, res)=>{    
-    res.sendFile(path.join(__dirname, '/public/paginas/index.html'))
+    res.sendFile(path.join(__dirname, '/public/paginas/login.html'))
 })
 
 server.get('/desenvolvedores', (req, res)=>{
@@ -56,8 +80,8 @@ server.get('/inscricao', (req, res)=>{
     res.sendFile(path.join(__dirname+'/public/paginas/inscricao.html'))
 })
 
-server.get('/login', (req, res)=>{
-    res.sendFile(path.join(__dirname+'/public/paginas/login.html'))
+server.get('/index', (req, res)=>{
+    res.sendFile(path.join(__dirname+'/public/paginas/index.html'))
 })
 
 server.get('/perfil', (req, res)=>{
