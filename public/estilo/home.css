@@ -12,16 +12,23 @@
     background-size: cover;
     color: white;
 }
+h1{
+    font-weight: bold
+
+}
 .frase{
     text-align: center;
     font-family: Oswald;
     font-size: 50px;
 }
-
+li{
+    font-weight: bold
+}
 .cabecalho{
     text-align: center;
     background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
     font-size: 25px;
+
 }
 .barra{
     background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
@@ -35,7 +42,7 @@ body{
 .botao{
     text-align: center;
 }
-.teste{
+.cartao{
     height: 500px;
     width: 450px;
 }

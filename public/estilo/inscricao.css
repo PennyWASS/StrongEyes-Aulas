@@ -22,7 +22,9 @@ body{
     /*color: black;*/
     border:#391f57;
 }
-
+li{
+    font-weight: bold
+}
 .barra{
     background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
 }
