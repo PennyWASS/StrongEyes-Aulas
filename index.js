@@ -20,12 +20,11 @@ server.use(bodyParser.urlencoded({
     const resultado = await database.sync();
     console.log(resultado);
 
-
  }catch(error){
     console.log(error);
  }
 })();
-
+var createPerfil = {};
 server.post('/salvarPerfil', async(req, res)=>{
     const createPerfil = await Perfil.create({
         nome: req.body.nome,
@@ -41,7 +40,7 @@ server.post('/salvarPerfil', async(req, res)=>{
         senha: req.body.senha
     });
     console.log(createPerfil);
-    res.sendFile(path.join(__dirname+'/public/paginas/index.html'))
+    res.sendFile(path.join(__dirname+'/public/paginas/index.html'));
 })
 
 server.post('/logar', async(req, res)=>{
