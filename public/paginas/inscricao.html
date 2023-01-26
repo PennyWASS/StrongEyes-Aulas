@@ -17,7 +17,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light barra">
-        <a href="#" class="navbar-brand"><img src="../imagens/Strong-Eyes.ico" alt="Logo StrongEyes" width="50"></img></a>
+        <a href="/index" class="navbar-brand"><img src="../imagens/Strong-Eyes.ico" alt="Logo StrongEyes" width="50"></img></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#textoNavbar" aria-controls="textoNavbar"
         aria-expanded="false" aria-label="Alternar Navegação">
@@ -38,108 +38,114 @@
             <span class="navbar-text" style="margin-left: 1100px;"><a href="/desenvolvedores"><img src="../imagens/dev.png" alt="desenvolvedores" width="45px"></a></span>
         </div>
     </nav>
-
-    <div id="login">
-        <h3 class="text-center pt-5" id="cadastrotxt" style="color: #65379B;">Crie sua conta aqui:</h3>
-        
-        <div class="container">
-            <div id="login-row" class="justify-content-center align items center row">
-                <div id="login-column" class="col-md-6">
-                    <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" style="border: none;">
-                            <h3 class="text-center" style="color: #65379B;">Cadastro</h3>
-                            <div class="form-group">
-                                <label for="username" class="text-black">Qual o seu e-mail?</label>
-                                <input type="text" id="email" name="email" class="form-control" placeholder="Digite seu e-mail..." required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="text-black">Crie uma senha:</label>
-                                <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite sua senha..." required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="text-black">Repita sua senha:</label>
-                                <input type="password" id="repet-senha" name="senha" class="form-control" placeholder="Repita sua senha..." required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="username" class="text-black">Qual o seu nome?</label>
-                                <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome..." required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="username" class="text-black">De onde você é?</label>
-                                <input type="text" id="nome" name="nome" class="form-control" placeholder="Selecione sua nacionalidade..." required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="username" class="text-black">Qual sua idade?</label>
-                                <input type="date" id="dia" name="dia" class="form-control" placeholder="Dia">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="username" class="text-black">Qual é o seu gênero?</label>
-                                    <div >
-                                        <label for="remember-me" class="text-black">
-                                            <span>
-                                                <input type="radio" name="nasculino" id="feminino">
-                                            </span>
-                                            <span>Masculino</span>
-                                            <span>
-                                                <input type="radio" name="feminino" id="feminino">
-                                            </span>
-                                            <span>Feminino</span>
-                                            <span>
-                                                <input type="radio" name="nbinario" id="nbinario">
-                                            </span>
-                                            <span>Não binário</span>
-                                            <span>
-                                                <input type="radio" name="outro" id="outro">
-                                            </span>
-                                            <span>Outro</span>
-                                            <span>
-                                                <input type="radio" name="pnd" id="pnd">
-                                            </span>
-                                            <span>Prefiro não dizer</span>
-                                        </label>
-                                    </div>
-                                </label>
-                            </div>
-
-                            
-                            <div class="form-group mt-2">
-                                <div class="row">
-                                    <div class="col-md-9">
-                                        <label for="remember-me" class="text-black mb-2">
-                                            <span>
-                                                <input type="checkbox" name="remember-me" id="remember-me">
-                                            </span>
-                                            <span>Quero receber notificações no meu e-mail</span>
-                                        </label>
-                                        <label for="notificacao" class="text-black mb-2">
-                                            <span>
-                                                <input type="checkbox" name="notificiacao" id="notificacao">
-                                            </span>
-                                            <span>Eu concordo com os <a href="#" style="color: #391f57;">Termos e Condições de Uso</a></span>
-                                        </label>
-                                        <!-- <label for="autorizacao" class="text-black mb-2">
-                                            <span>
-                                                <input type="checkbox" name="autorizacao" id="autorizacao">
-                                            </span>
-                                            <span>Eu autorizo o compartilhamento dos meus dados cadastrais com os os provedores de conteúdo do StrongEyes</span>
-                                        </label> -->
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="/login" style="color: #391f57;">Já tenho uma conta</a>
-                                    </div>
+    
+    <form action="/salvarPerfil2" method="post">
+        <div id="login">
+            <h3 class="text-center pt-5" id="cadastrotxt" style="color: #65379B;">Crie sua conta aqui:</h3>
+            
+            <div class="container">
+                <div id="login-row" class="justify-content-center align items center row">
+                    <div id="login-column" class="col-md-6">
+                        <div id="login-box" class="col-md-12">
+                            <form id="login-form" class="form" style="border: none;">
+                                <h3 class="text-center" style="color: #65379B;">Cadastro</h3>
+                                <div class="form-group">
+                                    <label for="username" class="text-black">Qual o seu e-mail?</label>
+                                    <input type="text" id="email" name="email" class="form-control" placeholder="Digite seu e-mail..." required>
                                 </div>
-                                <br>
-                                <input onclick="registro()"  type="submit" name="submit" class="btn btn-success btn-md mt-1" value="Cadastrar" id="envio">
-                            </div>
-                        </form>
+                                <div class="form-group">
+                                    <label for="password" class="text-black">Crie uma senha:</label>
+                                    <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite sua senha..." required>
+                                </div>
+                                <!-- <div class="form-group">
+                                    <label for="password" class="text-black">Repita sua senha:</label>
+                                    <input type="password" id="repetsenha" name="repet-senha" class="form-control" placeholder="Repita sua senha..." required>
+                                </div> -->
+
+                                <div class="form-group">
+                                    <label for="username" class="text-black">Qual o seu nome?</label>
+                                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome..." required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="text-black">Qual o seu sobrenome?</label>
+                                    <input type="text" id="nome" name="sobrenome" class="form-control" placeholder="Digite seu sobrenome..." required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="username" class="text-black">De onde você é?</label>
+                                    <input type="text" id="nome" name="pais" class="form-control" placeholder="Selecione sua nacionalidade..." required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="text-black">Qual sua idade?</label>
+                                    <input type="date" id="dia" name="idade" class="form-control" placeholder="Dia">
+                                </div>
+<!-- 
+                                <div class="form-group">
+                                    <label for="username" class="text-black">Qual é o seu gênero?</label>
+                                        <div >
+                                            <label for="remember-me" class="text-black">
+                                                <span>
+                                                    <input type="radio" name="nasculino" id="feminino">
+                                                </span>
+                                                <span>Masculino</span>
+                                                <span>
+                                                    <input type="radio" name="feminino" id="feminino">
+                                                </span>
+                                                <span>Feminino</span>
+                                                <span>
+                                                    <input type="radio" name="nbinario" id="nbinario">
+                                                </span>
+                                                <span>Não binário</span>
+                                                <span>
+                                                    <input type="radio" name="outro" id="outro">
+                                                </span>
+                                                <span>Outro</span>
+                                                <span>
+                                                    <input type="radio" name="pnd" id="pnd">
+                                                </span>
+                                                <span>Prefiro não dizer</span>
+                                            </label>
+                                        </div>
+                                    </label>
+                                </div> -->
+                                
+                                <div class="form-group mt-2">
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <label for="remember-me" class="text-black mb-2">
+                                                <span>
+                                                    <input type="checkbox" name="remember-me" id="remember-me">
+                                                </span>
+                                                <span>Quero receber notificações no meu e-mail</span>
+                                            </label>
+                                            <label for="notificacao" class="text-black mb-2">
+                                                <span>
+                                                    <input type="checkbox" name="notificiacao" id="notificacao">
+                                                </span>
+                                                <span>Eu concordo com os <a href="#" style="color: #391f57;">Termos e Condições de Uso</a></span>
+                                            </label>
+                                            <!-- <label for="autorizacao" class="text-black mb-2">
+                                                <span>
+                                                    <input type="checkbox" name="autorizacao" id="autorizacao">
+                                                </span>
+                                                <span>Eu autorizo o compartilhamento dos meus dados cadastrais com os os provedores de conteúdo do StrongEyes</span>
+                                            </label> -->
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="/login" style="color: #391f57;">Já tenho uma conta</a>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <button type="submit" name="submit" class="btn btn-success btn-md mt-1" value="Cadastrar" id="envio">Salvar</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </body>
 </html>
